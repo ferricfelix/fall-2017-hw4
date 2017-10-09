@@ -4,6 +4,8 @@
 
 **Due**: October 22 at 11:59pm CT
 
+For each problem, you are to submit a file named `problem<N>.py` where `<N>` is the number of the problem (e.g. `problem1.py`).
+
 ## Problem 1: Constructive solid geometry
 
 In this problem, you will need to exercise your knowledge of the Python data model to build an application that produces images of complex geometric objects via a technique called [constructive solid geometry](https://en.wikipedia.org/wiki/Constructive_solid_geometry) (CSG). CSG allows one to model arbitrary geometric objects by representing them as Boolean operators applied to simple *primitives* (basic geometric shapes). Namely, objects are represented as binary trees where the leaves are primitive shapes (spheres, cylinders, etc.) and the nodes are operators (intersection, union, and difference).
