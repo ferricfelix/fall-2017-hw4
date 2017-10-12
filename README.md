@@ -6,7 +6,10 @@
 
 For each problem, you are to submit a file named `problem<N>.py` where `<N>` is the number of the problem (e.g. `problem1.py`).
 
-## Problem 1: Constructive solid geometry
+## Problem 1: Fractions
+
+
+## Problem 2: Constructive solid geometry
 
 In this problem, you will need to exercise your knowledge of the Python data model to build an application that produces images of complex geometric objects via a technique called [constructive solid geometry](https://en.wikipedia.org/wiki/Constructive_solid_geometry) (CSG). CSG allows one to model arbitrary geometric objects by representing them as Boolean operators applied to simple *primitives* (basic geometric shapes). Namely, objects are represented as binary trees where the leaves are primitive shapes (spheres, cylinders, etc.) and the nodes are operators (intersection, union, and difference).
 
@@ -41,9 +44,9 @@ Detailed specifications for each class are listed below. In addition, each class
 - The `__sub__(self, other)` method should return an instance of `Difference`, representing the difference between the two operands.
 - The `draw(self, canvas)` method accepts an instance of `tkinter.Canvas` and draws the shape represented by `self`. The physical coordinate (0,0) should appear in the center of the canvas. Thus, you must translate from the canvas coordinates to the physical coordinates of the CSG objects. As an example, if the canvas is 100 by 100, then the canvas location (50,50) would correspond to a location of (0,0) in physical coordinates, since (50,50) represents the center of the canvas. Similarly, the canvas location (0,0) would correspond to a physical location of (-50,50).
 
-  To draw a shape, loop over each (x,y) pixel in the canvas and check whether the cooresponding physical coordinate is "in" the shape, i.e., check whether `(x,y) in self` and if so, call the `draw_pixel()` function that has been provided to you.
+To draw a shape, loop over each (x,y) pixel in the canvas and check whether the cooresponding physical coordinate is "in" the shape, i.e., check whether `(x,y) in self` and if so, call the `draw_pixel()` function that has been provided to you.
 
-  Note: to get the width and height of the canvas, you can index it as `canvas['height']` and `canvas['width']` (both return strings, not integers).
+Note: to get the width and height of the canvas, you can index it as `canvas['height']` and `canvas['width']` (both return strings, not integers).
 
 ### Circle Class
 
